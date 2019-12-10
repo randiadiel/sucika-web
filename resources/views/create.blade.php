@@ -28,7 +28,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Email">Messages:</label>
-              <textarea cols="50" type="text" class="form-control" name="messages"></textarea>
+              <textarea cols="50" rows="50" type="text" class="form-control" name="messages"></textarea>
             </div>
           </div>
         </div>
