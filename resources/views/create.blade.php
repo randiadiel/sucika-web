@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Laravel 5.6 CRUD Tutorial With Example  </title>
+    <title>Enter A Sucikas</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">  
@@ -28,7 +28,7 @@
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
               <label for="Email">Messages:</label>
-              <textarea cols="50" rows="50" type="text" class="form-control" name="messages"></textarea>
+              <textarea cols="50" rows="7" type="text" class="form-control" name="messages"></textarea>
             </div>
           </div>
         </div>

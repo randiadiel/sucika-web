@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class PeopleController extends Controller
 {
@@ -34,7 +35,14 @@ class PeopleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //Submit Data To Database
+        $password=Str::random(5);
+        $peoples= new \App\People;
+        $peoples->name=$request->get('name');
+        $peoples->messages=$request->get('messages');
+        $peoples->role=$request->get('role');
+        $peoples->password=$password;
+        $peoples->save();
     }
 
     /**
