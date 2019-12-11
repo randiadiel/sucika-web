@@ -53,7 +53,8 @@ class PeopleController extends Controller
      */
     public function show($id)
     {
-        //
+        $people = \App\People::where('password',$id)->first();
+        return view('view',compact('people','id'));
     }
 
     /**
