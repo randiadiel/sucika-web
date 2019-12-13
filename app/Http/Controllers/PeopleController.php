@@ -14,7 +14,7 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        //
+        return view('index');
     }
 
     /**
@@ -66,6 +66,20 @@ class PeopleController extends Controller
     public function edit($id)
     {
         //
+    }
+
+     /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function search(Request $request)
+    {
+        $cari = $request->password;
+        $url = 'peoples/'.$cari;
+        // dd($url);
+        return redirect($url);
     }
 
     /**

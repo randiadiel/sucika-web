@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{$people->name}}'s Sucika</title>
+    <title>Sucika</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.css" rel="stylesheet">  
@@ -19,13 +19,18 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="form-group col-md-8">
-            <h1 class="text-light">Halo, {{$people->name}}</h1>
+            <h1 class="text-light">Halo !</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-md-2"></div>
             <div class="form-group col-md-8">
-              <h4 class="text-center text-light">{{$people->messages}}</h4>
+              <form action="{{url('search')}}" method="post">
+              @csrf
+                Masukkan Unique Code:
+                <input type="text" name="password">
+                <input type="submit">
+              </form>
             </div>
           </div>
         </div>

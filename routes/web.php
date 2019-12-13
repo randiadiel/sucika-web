@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('peoples','PeopleController');
+Route::post('search','PeopleController@search');
