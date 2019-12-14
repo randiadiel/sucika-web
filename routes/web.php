@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::resource('peoples','PeopleController');
 Route::post('search','PeopleController@search');
 Route::get('list','PeopleController@list');
+Route::get('print','PeopleController@print');

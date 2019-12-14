@@ -69,6 +69,13 @@ class PeopleController extends Controller
         return view('list',compact('peoples'));
     }
 
+    public function print()
+    {
+        $peoples = \App\People::all();
+        return view('print',compact('peoples'));
+    }
+
+
     /**
      * Show the form for editing the specified resource.
      *
