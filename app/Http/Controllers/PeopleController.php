@@ -77,7 +77,8 @@ class PeopleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $people = \App\People::find($id);
+        return view('edit',compact('people','id'));
     }
 
      /**
@@ -103,7 +104,12 @@ class PeopleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $people= \App\People::find($id);
+        $people->name=$request->get('name');
+        $people->messages=$request->get('messages');
+        $people->role=$request->get('role');
+        $people->save();
+        return redirect('list');
     }
 
     /**
