@@ -1,4 +1,4 @@
-<!-- create.blade.php -->
+<!-- view.blade.php -->
 
 <!DOCTYPE html>
 <html>
@@ -12,9 +12,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>  
   </head>
-  <body class="h-100" style="background-image: url('{{asset('img/bg.jpg')}}'); background-size: cover;">
-    <div style="background-color: rgba(0,0,0,0.8);">
-    <div class="container">
+  <body style="background-image: url('{{asset('img/bg.jpg')}}'); background-size: cover; height: 100vh;">
+    <div style="background-color: rgba(0,0,0,0.8); height: 100vh;">
+    <div class="container" style="height: 100vh;">
       <h2 class="text-primary">Sucika</h2><br/>
         <div class="row">
           <div class="col-md-2"></div>
