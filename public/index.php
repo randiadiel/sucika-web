@@ -9,12 +9,6 @@
 
 define('LARAVEL_START', microtime(true));
 
-if(DB::connection()->getDatabaseName())
-{
-   echo "Connected to database ".DB::connection()->getDatabaseName();
-}
-$response->send();
-
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
